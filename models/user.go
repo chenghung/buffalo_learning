@@ -8,9 +8,8 @@ import (
 	"github.com/gobuffalo/validate"
 )
 
-// User app user
 type User struct {
-	ID        uint32    `json:"id" db:"id"`
+	ID        int       `json:"id" db:"id"`
 	Email     string    `json:"email" db:"email"`
 	FirstName string    `json:"first_name" db:"first_name"`
 	LastName  string    `json:"last_name" db:"last_name"`
