@@ -1,0 +1,10 @@
+create_table("posts", func(t) {
+	t.Column("id", "integer", {"primary": true})
+	t.Column("title", "string", {})
+	t.Column("content", "text", {})
+	t.Column("user_id", "integer", {})
+})
+
+add_foreign_key("posts", "user_id", {"users": ["id"]}, {
+	"on_delete": "CASCADE",
+});
