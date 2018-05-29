@@ -5,6 +5,7 @@ development:
   port: "3306"
   user: "root"
   password: "mysql"
+  pool: 50
 
 test:
   dialect: "mysql"
