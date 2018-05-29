@@ -29,6 +29,7 @@ func UserShow(c buffalo.Context) error {
 	err := models.DB.Find(&user, c.Param("id"))
 
 	if err != nil {
+		c.Logger().Debug(err)
 		var message string
 		var statusCode int
 
