@@ -32,7 +32,7 @@ CREATE TABLE `posts` (
   PRIMARY KEY (`id`),
   KEY `posts_users_id_fk` (`user_id`),
   CONSTRAINT `posts_users_id_fk` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -62,9 +62,10 @@ CREATE TABLE `users` (
   `last_name` varchar(60) NOT NULL,
   `created_at` datetime NOT NULL,
   `updated_at` datetime NOT NULL,
+  `encrypted_password` varchar(255) NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `users_email_idx` (`email`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -76,4 +77,4 @@ CREATE TABLE `users` (
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2018-05-29 22:05:09
+-- Dump completed on 2018-06-02 22:29:12
