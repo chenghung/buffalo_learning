@@ -3,7 +3,7 @@ package main
 import (
 	"log"
 
-	"github.com/buffalo_learning/actions"
+	"github.com/chenghung/buffalo_learning/actions"
 )
 
 func main() {

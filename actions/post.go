@@ -1,7 +1,7 @@
 package actions
 
 import (
-	"github.com/buffalo_learning/models"
+	"github.com/chenghung/buffalo_learning/models"
 	"github.com/gobuffalo/buffalo"
 )
 

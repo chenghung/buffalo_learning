@@ -1,7 +1,7 @@
 package grifts
 
 import (
-	"github.com/buffalo_learning/actions"
+	"github.com/chenghung/buffalo_learning/actions"
 	"github.com/gobuffalo/buffalo"
 )
 
